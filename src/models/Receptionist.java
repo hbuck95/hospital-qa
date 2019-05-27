@@ -1,10 +1,8 @@
 package models;
 
-import java.util.Date;
+public class Receptionist extends Person implements Promotable {
 
-public class Receptionist extends Person {
-
-	public Receptionist(int id, String firstName, String lastName, String address, Date dateOfBirth) {
+	public Receptionist(int id, String firstName, String lastName, String address, String dateOfBirth) {
 		super(id, firstName, lastName, address, dateOfBirth);
 		// TODO Auto-generated constructor stub
 	}

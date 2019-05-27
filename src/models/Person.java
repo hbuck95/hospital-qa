@@ -1,15 +1,13 @@
 package models;
 
-import java.util.Date;
-
 public abstract class Person {
 	private int id;
 	private String firstName;
 	private String lastName;
 	private String address;
-	private Date dateOfBirth;
+	private String dateOfBirth;
 
-	protected Person(int id, String firstName, String lastName, String address, Date dateOfBirth) {
+	protected Person(int id, String firstName, String lastName, String address, String dateOfBirth) {
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -19,7 +17,7 @@ public abstract class Person {
 
 	@Override
 	public String toString() {
-		return String.format("[Id: %s, First Name: %s, Last Name: %s, Address: %s, Date of Birth: %s", id, firstName,
+		return String.format("[Id: %s, First Name: %s, Last Name: %s, Address: %s, Date of Birth: %s]", id, firstName,
 				lastName, address, dateOfBirth);
 	}
 
@@ -82,14 +80,14 @@ public abstract class Person {
 	/**
 	 * @return the dateOfBirth
 	 */
-	public Date getDateOfBirth() {
+	public String getDateOfBirth() {
 		return dateOfBirth;
 	}
 
 	/**
 	 * @param dateOfBirth the dateOfBirth to set
 	 */
-	public void setDateOfBirth(Date dateOfBirth) {
+	public void setDateOfBirth(String dateOfBirth) {
 		this.dateOfBirth = dateOfBirth;
 	}
 

@@ -1,12 +1,10 @@
 package models;
 
-import java.util.Date;
-
 public class Doctor extends Person {
 	private Grade grade;
 	private int teamId = 0;
 
-	public Doctor(int id, String firstName, String lastName, String address, Date dateOfBirth, Grade grade) {
+	public Doctor(int id, String firstName, String lastName, String address, String dateOfBirth, Grade grade) {
 		super(id, firstName, lastName, address, dateOfBirth);
 		this.grade = grade;
 		// TODO Auto-generated constructor stub
