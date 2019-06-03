@@ -22,4 +22,16 @@ public class Ward {
 		patientsOnWard.add(p);
 	}
 
+	public int getId() {
+		return id;
+	}
+
+	public int getCapacity() {
+		return capacity;
+	}
+
+	public List<Patient> getPatientsOnWard() {
+		return patientsOnWard;
+	}
+
 }

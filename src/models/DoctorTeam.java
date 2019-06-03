@@ -6,7 +6,7 @@ import java.util.List;
 public class DoctorTeam {
 	private int id;
 	private List<Doctor> doctorsOnTeam = new ArrayList<Doctor>();
-	private static int MAX_DOCTORS = 4;
+	private static final int MAX_DOCTORS = 4;
 
 	public boolean isDoctorOnTeam(Doctor d) {
 		return doctorsOnTeam.contains(d);
@@ -29,7 +29,8 @@ public class DoctorTeam {
 	}
 
 	/**
-	 * @param id the id to set
+	 * @param id
+	 *            the id to set
 	 */
 	public void setId(int id) {
 		this.id = id;
@@ -43,7 +44,8 @@ public class DoctorTeam {
 	}
 
 	/**
-	 * @param doctorsOnTeam the doctorsOnTeam to set
+	 * @param doctorsOnTeam
+	 *            the doctorsOnTeam to set
 	 */
 	public void setDoctorsOnTeam(List<Doctor> doctorsOnTeam) {
 		this.doctorsOnTeam = doctorsOnTeam;
